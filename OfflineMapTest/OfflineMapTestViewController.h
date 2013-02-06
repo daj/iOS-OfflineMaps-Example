@@ -3,7 +3,7 @@
 //  OfflineMapTest
 //
 //  Created by Thijs Scheepers on 07-09-11.
-//  Copyright 2011 Infinite Droplets. All rights reserved.
+//  Copyright 2011 Label305. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
