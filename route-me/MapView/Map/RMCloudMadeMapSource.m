@@ -73,9 +73,9 @@ NSString * const RMCloudMadeAccessTokenRequestFailed = @"RMCloudMadeAccessTokenR
 	if([self readTokenFromFile])
 			return;
 	
+  NSUUID *uuid = [[UIDevice currentDevice] identifierForVendor];
 	NSString* url = [NSString stringWithFormat:@"%@/token/%@?userid=%u",CMTokenAuthorizationServer,accessKey,
-					[[UIDevice currentDevice].uniqueIdentifier hash]];
-
+					[uuid hash]];
 	
 	NSData* data = nil;
 	RMLog(@"%s, url = %@\n",__FUNCTION__,url);
