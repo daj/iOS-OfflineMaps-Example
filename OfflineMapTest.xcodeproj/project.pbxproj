@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3768229C1B0CDD1400F66FD4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3768229B1B0CDD1400F66FD4 /* Default-568h@2x.png */; };
 		76DA6EDA141765F500BB382D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA6ED9141765F500BB382D /* UIKit.framework */; };
 		76DA6EDC141765F500BB382D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA6EDB141765F500BB382D /* Foundation.framework */; };
 		76DA6EDE141765F500BB382D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA6EDD141765F500BB382D /* CoreGraphics.framework */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3768229B1B0CDD1400F66FD4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		76DA6ED5141765F500BB382D /* OfflineMapTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfflineMapTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DA6ED9141765F500BB382D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		76DA6EDB141765F500BB382D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,6 +99,7 @@
 		76DA6ECA141765F400BB382D = {
 			isa = PBXGroup;
 			children = (
+				3768229B1B0CDD1400F66FD4 /* Default-568h@2x.png */,
 				76DA71751417842100BB382D /* tiles.db */,
 				76DA6EDF141765F500BB382D /* OfflineMapTest */,
 				76DA6ED8141765F500BB382D /* Frameworks */,
@@ -188,6 +191,7 @@
 		76DA6ECC141765F400BB382D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Infinite Droplets";
 			};
 			buildConfigurationList = 76DA6ECF141765F400BB382D /* Build configuration list for PBXProject "OfflineMapTest" */;
@@ -245,6 +249,7 @@
 				76DA6EE4141765F500BB382D /* InfoPlist.strings in Resources */,
 				76DA6EED141765F500BB382D /* MainWindow.xib in Resources */,
 				76DA6EF3141765F500BB382D /* OfflineMapTestViewController.xib in Resources */,
+				3768229C1B0CDD1400F66FD4 /* Default-568h@2x.png in Resources */,
 				76DA71761417842100BB382D /* tiles.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +309,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -315,11 +319,11 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -328,11 +332,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -386,6 +388,7 @@
 				76DA6EF8141765F500BB382D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
